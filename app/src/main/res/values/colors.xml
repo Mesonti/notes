@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <color name="title_text">#121212</color>
+    <color name="muted_text">#6A6A6A</color>
+    <color name="body_text">#2F2F2F</color>
+
+    <color name="primary_color">#E3FFC0</color>
+
+    <color name="main_bg">#F9FFF2</color>
+    <color name="template">#D9D9D9</color>
+
+    <color name="red">#C01A1A</color>
+    <color name="ic_default">#3A3A3A</color>
+
+</resources>

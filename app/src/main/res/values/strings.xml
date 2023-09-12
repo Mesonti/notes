@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">notes</string>
+    <string name="btn_add_note">Добавить заметку</string>
+    <string name="title_add_note">Создание заметки</string>
+    <string name="input_name">Введите имя заметки</string>
+    <string name="input_note">Напиши что-нибудь</string>
+
+    <string name="title_list_note">Список заметок</string>
+
+
+
+    <string name="description_icon">Иконка назад</string>
+</resources>
