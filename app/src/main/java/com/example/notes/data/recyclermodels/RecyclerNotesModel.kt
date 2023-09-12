@@ -7,7 +7,7 @@ package com.example.notes.data.recyclermodels
 //    б) все модели и вместо null реакция интерфейса на null
 //       если null будет isLiked, то его не видно.
 data class RecyclerNotesModel(
-    val title: String,
-    val description: String,
-    val isLiked: Boolean,
+    val title: String?,
+    val description: String?,
+    val isLiked: Boolean?,
 )

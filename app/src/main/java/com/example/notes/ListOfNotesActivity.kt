@@ -7,12 +7,13 @@ import com.example.notes.data.recyclermodels.RecyclerNotesModel
 import com.example.notes.databinding.ListOfNoteBinding
 import com.example.notes.model.NotesAdapter
 
-class NotesActivity: AppCompatActivity() {
+class ListOfNotesActivity: AppCompatActivity() {
 
     private val notes = listOf<RecyclerNotesModel>(
         RecyclerNotesModel("Note1", "123", true),
         RecyclerNotesModel("Note2", "456", false),
         RecyclerNotesModel("Note3", "789", true),
+        RecyclerNotesModel("", "", false)
     )
     private lateinit var binding: ListOfNoteBinding
     private lateinit var adapter: NotesAdapter // Объект Adapter

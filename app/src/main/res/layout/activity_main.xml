@@ -63,9 +63,11 @@
                 android:hint="@string/input_name"
                 android:textColor="@color/title_text"
                 android:textColorHint="@color/title_text"
-                android:textSize="29sp"></com.google.android.material.textfield.TextInputEditText>
+                android:textSize="29sp">
+            </com.google.android.material.textfield.TextInputEditText>
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_body"
                 android:layout_width="match_parent"
                 android:layout_height="389dp"
                 android:layout_marginTop="@dimen/dimen_l"
@@ -73,12 +75,13 @@
                 android:hint="@string/input_note"
                 android:textColor="@color/body_text"
                 android:textColorHint="@color/body_text"
-                android:textSize="17sp"></com.google.android.material.textfield.TextInputEditText>
+                android:textSize="17sp">
+            </com.google.android.material.textfield.TextInputEditText>
+
 
         </LinearLayout>
 
         <Button
-
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:backgroundTint="@color/primary_color"
@@ -87,7 +90,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginBottom="@dimen/dimen_m">
+            android:layout_marginBottom="@dimen/dimen_m"
+            tools:ignore="InvalidId">
         </Button>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
