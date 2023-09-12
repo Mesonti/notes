@@ -9,5 +9,5 @@ package com.example.notes.data.recyclermodels
 data class RecyclerNotesModel(
     val title: String,
     val description: String,
-    val isLiked: Boolean,
+    val liked: Boolean,
 )
