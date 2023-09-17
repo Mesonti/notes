@@ -2,7 +2,10 @@ package com.example.notes
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.notes.data.recyclermodels.RecyclerNotesModel
 import com.example.notes.databinding.ActivityMainBinding
 
 import com.example.notes.model.NotesAdapter
@@ -37,6 +40,13 @@ class MainActivity : AppCompatActivity() {
 //
 //        binding.recyclerView.layoutManager = manager // Назначение LayoutManager для RecyclerView
 //        binding.recyclerView.adapter = adapter // Назначение адаптера для RecyclerView
+    }
+
+    // как сделать сортировку
+    fun sort(notes: List<RecyclerNotesModel>): List<RecyclerNotesModel> {
+        val sort = findViewById<ImageView?>(R.id.sort)
+        return notes.filter { it.title != null
+            it.description != null}
     }
 
 //    private val listener: PersonListener = {adapter.data = it}

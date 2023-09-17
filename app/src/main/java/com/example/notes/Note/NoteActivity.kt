@@ -1,22 +1,19 @@
-package com.example.notes.addnotes
+package com.example.notes.Note
 
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.notes.MainActivity
 import com.example.notes.R
 import com.example.notes.databinding.ActivityMainBinding
-import com.example.notes.databinding.ListOfNoteBinding
 
 class NoteActivity(
     val id: Int,
-    var name: String,
-    var description: String,
+    var name: String?,
+    var description: String?,
     var isLiked: Boolean = false,
 ) : AppCompatActivity() {
-
 
     private lateinit var binding: ActivityMainBinding
 
