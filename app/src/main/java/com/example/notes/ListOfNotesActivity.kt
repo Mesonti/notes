@@ -53,10 +53,10 @@ class ListOfNotesActivity: AppCompatActivity() {
         val notesAdapter = NotesAdapter(notes.toMutableList())
         binding.recyclerList.adapter = notesAdapter
 
-        binding.btnSort.setOnClickListener( {
+        binding.btnSort.setOnClickListener {
             val filtredNotes = filterNotes(notes)
             notesAdapter.setItems(filtredNotes)
-        })
+        }
 
         val manager = LinearLayoutManager(this) // LayoutManager
         binding.recyclerList.layoutManager = manager
