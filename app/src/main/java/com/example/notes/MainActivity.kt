@@ -2,7 +2,6 @@ package com.example.notes
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.notes.data.recyclermodels.RecyclerNotesModel
@@ -43,11 +42,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     // как сделать сортировку
-    fun sort(notes: List<RecyclerNotesModel>): List<RecyclerNotesModel> {
-        val sort = findViewById<ImageView?>(R.id.sort)
-        return notes.filter { it.title != null
-            it.description != null}
-    }
+    fun sort(notes: List<RecyclerNotesModel>): ImageView? = findViewById(R.id.btnSort)
 
 //    private val listener: PersonListener = {adapter.data = it}
 }

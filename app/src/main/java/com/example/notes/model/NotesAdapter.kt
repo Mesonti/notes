@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.notes.R
 import com.example.notes.data.recyclermodels.RecyclerNotesModel
 
-class NotesAdapter(val items: List<RecyclerNotesModel?>): RecyclerView.Adapter<NotesAdapter.NoteViewHolder>() {
+class NotesAdapter(val items: MutableList<RecyclerNotesModel?>): RecyclerView.Adapter<NotesAdapter.NoteViewHolder>() {
 
     class NoteViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val titleView: TextView? = itemView.findViewById(R.id.nameTextView)
@@ -20,7 +20,12 @@ class NotesAdapter(val items: List<RecyclerNotesModel?>): RecyclerView.Adapter<N
 //        val titleView = itemView.findViewById<TextView?>(R.id.nameTextView)
 //        val descriptionView = itemView.findViewById<TextView?>(R.id.descriptionTextView)
 //        val likeImageView = itemView.findViewById<ImageView?>(R.id.likedImageView)
+    }
 
+    fun setItems(items: List<RecyclerNotesModel>) {
+        this.items.clear()
+        this.items.addAll(items)
+        this.notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteViewHolder {
@@ -35,8 +40,8 @@ class NotesAdapter(val items: List<RecyclerNotesModel?>): RecyclerView.Adapter<N
 
     override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
         val item = items[position]
-        holder.titleView?.text = item?.title
-        holder.descriptionView?.text = item?.description
+        holder.titleView?.text = item?.title ?: "Empty"
+        holder.descriptionView?.text = item?.description ?: "Empty"
         holder.likeImageView?.isVisible = item?.isLiked == true
     }
 

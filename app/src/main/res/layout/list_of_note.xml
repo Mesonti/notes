@@ -36,13 +36,13 @@
                 android:textSize="24sp"
                 android:layout_weight="1"></TextView>
 
-
             <ImageView
-                android:id="@+id/sort"
+                android:id="@+id/btnSort"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:src="@android:drawable/ic_menu_preferences"
-                android:onClick="sort">
+                android:clickable="true"
+                android:focusable="true">
             </ImageView>
 
         </LinearLayout>
