@@ -47,7 +47,7 @@ class ListOfNotesActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ListOfNoteBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        
+
         val notesAdapter = NotesAdapter(notes.toMutableList())
         binding.recyclerList.adapter = notesAdapter
 
