@@ -30,7 +30,7 @@ class NotesAdapter(val items: MutableList<RecyclerNotesModel?>): RecyclerView.Ad
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoteViewHolder {
         val itemView = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_person, parent, false)
+            .inflate(R.layout.note_text, parent, false)
         val personViewHolder = NoteViewHolder(itemView)
         personViewHolder.likeImageView?.isVisible = false
         return personViewHolder
