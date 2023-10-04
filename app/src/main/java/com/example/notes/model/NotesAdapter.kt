@@ -17,9 +17,6 @@ class NotesAdapter(val items: MutableList<RecyclerNotesModel?>): RecyclerView.Ad
         val descriptionView: TextView? = itemView.findViewById(R.id.descriptionTextView)
         val likeImageView: ImageView? = itemView.findViewById(R.id.likedImageView)
 
-//        val titleView = itemView.findViewById<TextView?>(R.id.nameTextView)
-//        val descriptionView = itemView.findViewById<TextView?>(R.id.descriptionTextView)
-//        val likeImageView = itemView.findViewById<ImageView?>(R.id.likedImageView)
     }
 
     fun setItems(items: List<RecyclerNotesModel>) {
