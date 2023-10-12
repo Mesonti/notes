@@ -31,7 +31,7 @@
                 android:layout_width="16dp"
                 android:layout_height="16dp"
                 android:layout_gravity="center_horizontal|center_vertical"
-                android:src="@drawable/arrow_left"
+                android:src="@drawable/ic_arrow_left"
                 android:contentDescription="@string/description_icon">
 
             </ImageView>
@@ -82,16 +82,16 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/btn_add_note"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:backgroundTint="@color/primary_color"
-            android:text="@string/btn_add_note"
+            android:text="@string/btn_save_note"
             android:textColor="@color/title_text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginBottom="@dimen/dimen_m"
-            tools:ignore="InvalidId">
+            android:layout_marginBottom="@dimen/dimen_m">
         </Button>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
